@@ -948,32 +948,6 @@ print(time.time())
 
 infos = []
 
-"""
-params = dict(
-    atype = 'co',
-    betw_approx = 1,
-    min_degree = 10,
-    opts = {'scale': 1000},
-    time_span = (1985,1995),
-    time_step = 1,
-    weighted = False,
-    out_file='bc_weighted_network',
-    tit='Cocitation network of cellular automata papers')
-
-inf = network_analyse(**params)
-infos.append({'params':params, 'infos':inf})
-
-clusters_comp = cluster_analyse(infos[0]['infos'][params['time_span']]['partition'], ['TI', 'TI_bi', 'TI_tri','AU','C1','AB','SO','CR','CR_AU','KP','WC','SC','DE'], tot_df)
-
-dump_to_file(clusters_comp, 'co_clusters_comp.txt')
-"""
-
-
-# vettore totale (o medio?) normalizzato vs vettori singoli (differenza membro a membro)
-# pmi?
-# journal co-citation
-
-
 params = dict(
     atype = 'bc',
     betw_approx = 10,
